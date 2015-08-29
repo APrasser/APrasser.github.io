@@ -6,6 +6,11 @@ layout: default
 
   <h1 class="page-heading">Post listing</h1>
 
+
+{% for product in site.products %}
+<span>woah man .... {{product.title}}</span>
+{% endfor %}
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
